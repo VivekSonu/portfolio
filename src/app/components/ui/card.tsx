@@ -16,7 +16,7 @@ const Card: FC<CardProps> =({title,children,className})=>{
    transition={{ duration: 0.65 }}
    whileInView={{ opacity: 1, y: 0 }}
    viewport={{ once:false }}
-   className={cn("relative bg-primary-background w-full h-fit rounded-2xl border border-border p-6 text-primary-foreground overflow-hidden",className)}>
+   className={cn("relative bg-primary-background w-full h-fit rounded-2xl border border-border p-3 md:p-6 text-primary-foreground overflow-hidden",className)}>
     <div className="flex flex-col gap-y-6">
         {title?(
             <div className="font-pixel">
