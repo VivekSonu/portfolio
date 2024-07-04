@@ -30,10 +30,10 @@ export const TimelineItem: FC<TimelineItemProps> = ({
   tag,
 }) => {
   return (
-    <div className="flex flex-wrap gap-4 md:gap-12 min-h justify-start relative text-[10px] lg:text-sm">
+    <div className="flex flex-wrap gap-[8px] md:gap-12 min-h justify-start relative text-[10px] lg:text-sm">
       {/* Date timeline */}
       <div
-        className="h-auto py-0.5 flex-none break-words whitespace-pre"
+        className="h-auto py-1 flex-none break-words whitespace-pre"
         style={{ width: `${isCourse ? "0" : ""}` }}
       >
         <p className="text-secondary-foreground">{date}</p>
