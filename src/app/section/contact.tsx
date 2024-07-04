@@ -3,6 +3,7 @@ import React from 'react'
 import Heading from '../components/heading/heading'
 import ContactCard from '../components/ContactCard'
 import { BsArrowUp } from "react-icons/bs";
+import Link from 'next/link';
 
 export default function Contact() {
   return (
@@ -11,7 +12,7 @@ export default function Contact() {
         <div className="">
         <ContactCard/>
         </div>
-        <div className="flex justify-center"><BsArrowUp className='bg-white text-center size-5 '/></div>
+        <div className="flex justify-center"><Link href="#home"><BsArrowUp className='bg-gray-500 text-center size-5 '/></Link></div>
         <p className="text-center text-xs pt-8 text-white">© 2024 Vivek Kumar Singh.</p>
     </footer>
   )

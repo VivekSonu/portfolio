@@ -10,7 +10,7 @@ export default function MeCard() {
         <div className="w-full h-[300px] sm:h-[500px]  overflow-hidden">
             {/* background image */}
             <Image
-               src=''
+               src={MyImg}
                alt="V"
                className="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover"
             />
