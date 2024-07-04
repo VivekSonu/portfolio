@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GrainEffect from "./components/visualEffects/grain-effect";
+import Cursor from "./components/cursor/cursor";
+import { FloatingNavDemo } from "./components/nav";
+import scrollTop from "./components/scrollToTop/scrollToTop";
+import { cn } from "@/utils/cn";
+import ScrollToTop from "react-scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        {/* <GrainEffect/> */}
+        <Cursor/>
+        <FloatingNavDemo />
+        {children}</body>
     </html>
   );
 }
