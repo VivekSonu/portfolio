@@ -16,7 +16,7 @@ const Heading: FC<HeadingProps> = ({ number, title_1, title_2 }) => {
     initial={{ opacity: 0, y: 50 }}
     transition={{  duration: 0.65 }}
     whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: false }}
+    viewport={{ once: true }}
     className="relative my-10 px-8 z-[5000]">
       {/* Number */}
       <div className="outline-none flex flex-col justify-start shrink-0 opacity-5 transform -top-32 2xl:-top-24 w-[71px] flex-none h-auto left-4 lg:left-12 absolute whitespace-pre">
