@@ -17,6 +17,7 @@ import pb from "@/assets/images/stack/pb.jpg";
 import Asana from "@/assets/images/stack/asana.png";
 import cpp from "@/assets/images/stack/cpp.png";
 import Python from "@/assets/images/stack/py.png";
+import Git from "@/assets/images/stack/Git.svg";
 // import Bootstrap from "@/assets/images/stack/bootstrap.png";
 
 
@@ -139,6 +140,12 @@ export const stackData=[
                 id:4,
                 title:"C++",
                 image:cpp,
+                bgColor:"",
+            },
+            {
+                id:5,
+                title:"Git/GitHub",
+                image:Git,
                 bgColor:"",
             },
        ]
