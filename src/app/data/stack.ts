@@ -51,7 +51,7 @@ export const stackData=[
         ]
     },
     {
-        title:"Backend Tech/s",
+        title:"Backend",
         stack:[
             {
                 id:0,
@@ -74,7 +74,7 @@ export const stackData=[
         ]
     },
     {
-        title:"Frontend FW/LIBs",
+        title:"Frontend",
         stack:[
             {
                 id:0,
@@ -92,7 +92,7 @@ export const stackData=[
        ]
     },
     {
-        title:"Styling FWs",
+        title:"Styling",
         stack:[
             {
                 id:0,

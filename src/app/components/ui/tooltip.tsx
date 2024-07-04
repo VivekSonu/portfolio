@@ -13,7 +13,7 @@ const Tooltip: FC<TooltipProps>=({title,image,bgColor})=>{
     const [active,setActive]=useState<boolean>(false);
     return (
         <div className={cn(
-            "link relative bg-[#2D2C33] w-10 h-10 transform cursor-pointer grid place-items-center"
+            "link relative bg-[#2D2C33] w-5 h-5 lg:w-10 lg:h-10 transform cursor-pointer grid place-items-center"
             ,"border border-border rounded-xl",
             "hover:scale-110 transition-all duration-200"
         )}
@@ -21,7 +21,7 @@ const Tooltip: FC<TooltipProps>=({title,image,bgColor})=>{
         onMouseEnter={()=>setActive(true)}
         onMouseLeave={()=>setActive(false)}
         >
-        <div className="w-[27px] h-[27px]">
+        <div className="w-4 h-4 lg:w-[27px] lg:h-[27px]">
             <Image 
                 src={image}
                 alt={title}

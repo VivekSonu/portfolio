@@ -17,7 +17,7 @@ export default function StackCard() {
                 <p className="text-secondary-foreground">{tech.title}</p>
               </div>
               {/* Tooltip */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-1  lg:gap-4">
                 {tech.stack.map((t)=>(
                   <Tooltip 
                     key={t.id}

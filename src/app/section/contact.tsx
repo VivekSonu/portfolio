@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="">
         <ContactCard/>
         </div>
-        <div className="flex mt-2  justify-center"><Link href="#home"><BsArrowUp className='bg-gray-500 text-center size-5 border rounded-full '/></Link></div>
+        <div className="flex mt-2  justify-center"><Link href="#home"><BsArrowUp className='bg-gray-500 text-center size-7 border rounded-full '/></Link></div>
         <p className="text-center text-xs  pt-4 text-white">© 2024 Vivek Kumar Singh.</p>
     </footer>
   )

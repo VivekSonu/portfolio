@@ -9,7 +9,7 @@ const Video=({video,active}:{video:string; active:boolean})=>{
             if(active){
                 videoRef.current.play();
             }else{
-                videoRef.current.pause();
+                videoRef.current.play();
                 videoRef.current.currentTime=0;
             }
         }
