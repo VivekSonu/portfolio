@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import React, { ReactNode } from "react";
+import {animate, motion} from "framer-motion";
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
@@ -23,7 +24,11 @@ export const AuroraBackground = ({
         {...props}
       >
         <div className="absolute inset-0 overflow-hidden">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            transition={{ delay: 1.3, duration: 2.5 }}
+            whileInView={{ opacity: 0.3, y: 0 }}
+            viewport={{ once: true }}
             //   I'm sorry but this is what peak developer performance looks like // trigger warning
             className={cn(
               `
@@ -45,7 +50,7 @@ export const AuroraBackground = ({
               showRadialGradient &&
                 `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`
             )}
-          ></div>
+          ></motion.div>
         </div>
         {children}
       </div>

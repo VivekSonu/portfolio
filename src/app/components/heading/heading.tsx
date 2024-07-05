@@ -29,11 +29,11 @@ const Heading: FC<HeadingProps> = ({ number, title_1, title_2 }) => {
 
       {/* heading text wrapper */}
       <div className="flex items-center justify-center flex-nowrap min-h-min overflow-hidden p-0 w-full font-oswald">
-        <p className="text-[11vw] 2xl:text-[17vw]  lg:text-[5vw] leading-[100%] text-primary-foreground italic">
+        <p className="text-[11vw]   lg:text-[5vw] leading-[100%] text-primary-foreground italic">
             {title_1}
         </p>
         {/* <HeadingAnimatedSvg text="LEARN MORE ABOUT OUR FEATURED PROJECT"/> */}
-        <p className="text-[11vw] 2xl:text-[17vw] lg:text-[5vw] leading-[100%] text-primary-foreground italic">
+        <p className="text-[11vw]  lg:text-[5vw] leading-[100%] text-primary-foreground italic">
             {title_2}
         </p>
       </div>

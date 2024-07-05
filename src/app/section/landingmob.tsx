@@ -20,7 +20,7 @@ const fadeInAnimationVariants={
   },
 }
 
-export default function Landing() {
+export default function LandingMob() {
   return (
     <div id="home" className="relative h-screen w-screen overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 ">
@@ -82,50 +82,51 @@ export default function Landing() {
             text="You know the business"
             revealText="I know the chemistry"
           ></TextRevealCard> */}
-          <motion.div
+          {/* <motion.div
             variants={fadeInAnimationVariants}
             initial={{ opacity: 0, x: 50 }}
             transition={{ delay: 1.8, duration: 1.5 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="w-[40rem] h-40 relative border border-transparent rounded-b-full rounded-t-xl overflow-hidden "
-          >
+          > */}
             {/* Gradients */}
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+            {/* <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" /> */}
 
             {/* Core component */}
-            <SparklesCore
+            {/* <SparklesCore
               background="transparent"
               minSize={0.4}
               maxSize={1}
               particleDensity={1200}
               className=" w-full h-full"
               particleColor="#FFFFFF"
-            />
+            /> */}
 
             {/* Radial Gradient to prevent sharp edges */}
-            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]">
+            {/* <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"> */}
               {/* <TextRevealCards/> */}
-            </div>
-          </motion.div>
-
-        </div>
-        <motion.div
+            {/* </div> */}
+          {/* </motion.div> */}
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
           >
-            <div className="container_mouse text-[#565659]">
+            <div className="container_mouse text-[#565659] mt-44">
               <span className="mouse-btn border-black/5">
                 <span className="mouse-scroll"></span>
               </span>
               <span className="text-[10px]">Scroll Down</span>
             </div>
           </motion.div>
+
+        </div>
+
       </div>
     </div>
   );
