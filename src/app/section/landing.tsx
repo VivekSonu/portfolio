@@ -74,7 +74,7 @@ export default function Landing() {
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sm:text-lg md:text-  lg:text-xl text-white pt-3 mb-0"
+            className=" sm:text-lg md:text-  lg:text-xl text-white pt-3 mb-0"
           >
             A Full Stack Software Developer
           </motion.h1>
@@ -111,13 +111,12 @@ export default function Landing() {
               {/* <TextRevealCards/> */}
             </div>
           </motion.div>
-
-        </div>
-        <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
+            className="mt-20 md:mt-0 xl:mt-24"
           >
             <div className="container_mouse text-[#565659]">
               <span className="mouse-btn border-black/5">
@@ -126,6 +125,9 @@ export default function Landing() {
               <span className="text-[10px]">Scroll Down</span>
             </div>
           </motion.div>
+
+        </div>
+
       </div>
     </div>
   );

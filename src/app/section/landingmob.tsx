@@ -82,35 +82,35 @@ export default function LandingMob() {
             text="You know the business"
             revealText="I know the chemistry"
           ></TextRevealCard> */}
-          {/* <motion.div
+          <motion.div
             variants={fadeInAnimationVariants}
             initial={{ opacity: 0, x: 50 }}
             transition={{ delay: 1.8, duration: 1.5 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="w-[40rem] h-40 relative border border-transparent rounded-b-full rounded-t-xl overflow-hidden "
-          > */}
+          >
             {/* Gradients */}
-            {/* <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" /> */}
+            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
             {/* Core component */}
-            {/* <SparklesCore
+            <SparklesCore
               background="transparent"
               minSize={0.4}
               maxSize={1}
               particleDensity={1200}
               className=" w-full h-full"
               particleColor="#FFFFFF"
-            /> */}
+            />
 
             {/* Radial Gradient to prevent sharp edges */}
-            {/* <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"> */}
+            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]">
               {/* <TextRevealCards/> */}
-            {/* </div> */}
-          {/* </motion.div> */}
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             transition={{ delay: 1.5, duration: 1.5 }}

@@ -9,6 +9,7 @@ import Contact from "./section/contact";
 import dynamic from "next/dynamic";
 import React, { useState, useEffect } from "react";
 import { AuroraBackgrounds } from "./components/visualEffects/AuroraBackground";
+import LandingMob from "./section/landingmob";
 
 //Dynamic import WaterWaveWrapper to ensure it's only used in the client-side environment
 const WaterWaveWrapper = dynamic(
@@ -17,8 +18,30 @@ const WaterWaveWrapper = dynamic(
 );
 
 export default function Home() {
-  const [width, setWidth] = useState(0);
-  const breakpoint = 700;
+  return (
+    <>
+      <WaterWaveWrapper
+        imageUrl=""
+        dropRadius="4"
+        perturbance="3"
+        resolution="4048"
+      >
+        {() => (
+          <div>
+            <div className="pb-8">
+              {/* <Cursor/> */}
+              <Landing key={0} />
+              <AboutSection key={1} />
+              <FeaturedSection key={2} />
+              <Contact key={3} />
+            </div>
+          </div>
+        )}
+      </WaterWaveWrapper>
+    </>
+  );
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const breakpoint = 700;
   // const [mousePosition, setMousePosition] = useState({
   //   x: 0,
   //   y: 0,
@@ -45,59 +68,59 @@ export default function Home() {
   //     y: mousePosition.y,
   //   },
   // };
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    console.log(width)
-    return () => window.removeEventListener("resize", handleResize);
-  },[width] );
-  if (width > breakpoint) {
-    return (
-      <>
-        <WaterWaveWrapper
-          imageUrl=""
-          dropRadius="4"
-          perturbance="3"
-          resolution="4048"
-        >
-          {() => (
-            <div>
-              <div className="pb-8">
-                {/* <Cursor/> */}
-                <Landing key={0} />
-                <AboutSection key={1} />
-                <FeaturedSection key={2} />
-                <Contact key={3} />
-              </div>
-            </div>
-          )}
-        </WaterWaveWrapper>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <WaterWaveWrapper
-          imageUrl=""
-          dropRadius="4"
-          perturbance="3"
-          resolution="4048"
-        >
-          {() => (
-            <div>
-              <div className="pb-8">
-                {/* <Cursor/> */}
-                <AuroraBackgrounds key={0}/>
-                <AboutSection key={1} />
-                <FeaturedSection key={2} />
-                <Contact key={3} />
-              </div>
-            </div>
-          )}
-        </WaterWaveWrapper>
-      </>
-    );
-  }
+  // useEffect(() => {
+  //   const handleResize = () => setWidth(window.innerWidth);
+  //   window.addEventListener("resize", handleResize);
+  //   console.log(width)
+  //   return () => window.removeEventListener("resize", handleResize);
+  // },[width] );
+  // if (width > breakpoint) {
+  //   return (
+  //     <>
+  //       <WaterWaveWrapper
+  //         imageUrl=""
+  //         dropRadius="4"
+  //         perturbance="3"
+  //         resolution="4048"
+  //       >
+  //         {() => (
+  //           <div>
+  //             <div className="pb-8">
+  //               {/* <Cursor/> */}
+  //               <Landing key={0} />
+  //               <AboutSection key={1} />
+  //               <FeaturedSection key={2} />
+  //               <Contact key={3} />
+  //             </div>
+  //           </div>
+  //         )}
+  //       </WaterWaveWrapper>
+  //     </>
+  //   );
+  // } else {
+  //   return (
+  //     <>
+  //       <WaterWaveWrapper
+  //         imageUrl=""
+  //         dropRadius="4"
+  //         perturbance="3"
+  //         resolution="4048"
+  //       >
+  //         {() => (
+  //           <div>
+  //             <div className="pb-8">
+  //               {/* <Cursor/> */}
+  //               <LandingMob key={0}/>
+  //               <AboutSection key={1} />
+  //               <FeaturedSection key={2} />
+  //               <Contact key={3} />
+  //             </div>
+  //           </div>
+  //         )}
+  //       </WaterWaveWrapper>
+  //     </>
+  //   );
+  // }
 }
 
 // return (
