@@ -118,7 +118,6 @@ export default function LandingMob() {
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            className=""
           >
             <div className="container_mouse text-[#565659]">
               <span className="mouse-btn border-black/5">
