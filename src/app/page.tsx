@@ -18,8 +18,8 @@ const WaterWaveWrapper = dynamic(
 );
 
 export default function Home() {
-  const [width, setWidth] = useState(650);
-  const breakpoint = 500;
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 700;
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
