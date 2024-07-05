@@ -111,12 +111,14 @@ export default function LandingMob() {
               {/* <TextRevealCards/> */}
             </div>
           </motion.div>
-          <motion.div
+
+        </div>
+        <motion.div
             initial={{ opacity: 0, y: 50 }}
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            className="mt-20 "
+            className=""
           >
             <div className="container_mouse text-[#565659]">
               <span className="mouse-btn border-black/5">
@@ -125,8 +127,6 @@ export default function LandingMob() {
               <span className="text-[10px]">Scroll Down</span>
             </div>
           </motion.div>
-        </div>
-
       </div>
     </div>
   );
