@@ -116,7 +116,7 @@ export default function Landing() {
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            className="mt-20 md:mt-0 xl:mt-24"
+            className="mt-14"
           >
             <div className="container_mouse text-[#565659]">
               <span className="mouse-btn border-black/5">

@@ -74,7 +74,7 @@ export default function LandingMob() {
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sm:text-lg md:text-  lg:text-xl text-white pt-3 mb-0"
+            className=" sm:text-lg md:text-  lg:text-xl text-white pt-3 mb-0"
           >
             A Full Stack Software Developer
           </motion.h1>
@@ -107,7 +107,7 @@ export default function LandingMob() {
             />
 
             {/* Radial Gradient to prevent sharp edges */}
-            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]">
+            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(200px_90px_at_top,transparent_20%,white)]">
               {/* <TextRevealCards/> */}
             </div>
           </motion.div>
@@ -116,15 +116,15 @@ export default function LandingMob() {
             transition={{ delay: 1.5, duration: 1.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
+            className="mt-20 "
           >
-            <div className="container_mouse text-[#565659] mt-44">
+            <div className="container_mouse text-[#565659]">
               <span className="mouse-btn border-black/5">
                 <span className="mouse-scroll"></span>
               </span>
               <span className="text-[10px]">Scroll Down</span>
             </div>
           </motion.div>
-
         </div>
 
       </div>
