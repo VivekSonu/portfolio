@@ -40,7 +40,7 @@ export default function Home() {
         {() => (
           <div>
             <div className="pb-8">
-              {/* <Cursor/> */}
+              {/* <Cursor/ */}
               <Landing key={0} />
               <AboutSection key={1} />
               <FeaturedSection key={2} />
