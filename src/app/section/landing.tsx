@@ -48,7 +48,7 @@ export default function Landing() {
         <div className="h-[40rem] flex flex-col items-center justify-center overflow-hidden rounded-md ">
           <Socials />
           <TypewriterEffects />
-          <motion.h1
+          {/* <motion.h1
             variants={fadeInAnimationVariants}
             initial={{ opacity: 0, x: -50 }}
             transition={{ delay: 0.9, duration: 1.5 }}
@@ -57,8 +57,8 @@ export default function Landing() {
             className="text-lg md:text-lg  lg:text-xl text-white pt-3 "
           >
             I am
-          </motion.h1>
-          <motion.h1
+          </motion.h1> */}
+          {/* <motion.h1
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -66,9 +66,9 @@ export default function Landing() {
             className="md:text-7xl text-5xl lg:text-9xl font-bold text-center text-white relative z-20"
           >
             Singh,Vivek
-          </motion.h1>
+          </motion.h1> */}
           {/* <TextGenerateEffects/> */}
-          <motion.h1
+          {/* <motion.h1
             variants={fadeInAnimationVariants}
             initial={{ opacity: 0, x: -50 }}
             transition={{ delay: 1.5, duration: 1.5 }}
@@ -77,7 +77,7 @@ export default function Landing() {
             className=" sm:text-lg md:text-  lg:text-xl text-white pt-3 mb-0"
           >
             A Full Stack Software Developer
-          </motion.h1>
+          </motion.h1> */}
           {/* <TextRevealCard
             text="You know the business"
             revealText="I know the chemistry"
