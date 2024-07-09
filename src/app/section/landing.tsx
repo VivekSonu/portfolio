@@ -107,7 +107,7 @@ export default function Landing() {
             />
 
             {/* Radial Gradient to prevent sharp edges */}
-            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]">
+            <div className="absolute inset-0 w-full h-full border border-transparent rounded-b-full rounded-t-xl bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] sm:[mask-image:radial-gradient(200px_90px_at_top,transparent_20%,white)]">
               {/* <TextRevealCards/> */}
             </div>
           </motion.div>

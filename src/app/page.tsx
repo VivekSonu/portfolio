@@ -18,17 +18,17 @@ const WaterWaveWrapper = dynamic(
 );
 
 export default function Home() {
-  const [width, setWidth] = useState(0);
-  const breakpoint = 700;
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const breakpoint = 700;
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    console.log(width)
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [width]);
+  // useEffect(() => {
+  //   const handleResize = () => setWidth(window.innerWidth);
+  //   console.log(width)
+  //   window.addEventListener('resize', handleResize);
+  //   return () => window.removeEventListener('resize', handleResize);
+  // }, [width]);
 
-  if (width > breakpoint) {
+  // if (width > breakpoint) {
     return (
  <>
       <WaterWaveWrapper
@@ -51,29 +51,29 @@ export default function Home() {
       </WaterWaveWrapper>
     </>
     );
-  } else {
-    return (
-      <>
-      <WaterWaveWrapper
-        imageUrl=""
-        dropRadius="3"
-        perturbance="3"
-        resolution="2048"
-      >
-        {() => (
-          <div>
-            <div className="pb-8">
-              {/* <Cursor/> */}
-              <LandingMob key={0} />
-              <AboutSection key={1} />
-              <FeaturedSection key={2} />
-              <Contact key={3} />
-            </div>
-          </div>
-        )}
-      </WaterWaveWrapper>
-    </>
-    );
+  // } else {
+  //   return (
+  //     <>
+  //     <WaterWaveWrapper
+  //       imageUrl=""
+  //       dropRadius="3"
+  //       perturbance="3"
+  //       resolution="2048"
+  //     >
+  //       {() => (
+  //         <div>
+  //           <div className="pb-8">
+  //             {/* <Cursor/> */}
+  //             <LandingMob key={0} />
+  //             <AboutSection key={1} />
+  //             <FeaturedSection key={2} />
+  //             <Contact key={3} />
+  //           </div>
+  //         </div>
+  //       )}
+  //     </WaterWaveWrapper>
+  //   </>
+  //   );
   }
 
 
@@ -180,7 +180,7 @@ export default function Home() {
   //     </>
   //   );
   // }
-}
+
 
 // return (
 //   <>
