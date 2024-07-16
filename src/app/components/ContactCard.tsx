@@ -48,7 +48,14 @@ export default function ContactCard() {
             console.log(FormData.get("email"));
             console.log(FormData.get("message"));
 
-            await sendEmail(FormData);
+            // await sendEmail(FormData);
+
+            try {
+              await sendEmail(FormData);
+              alert("Thank you! Your message has been sent.");
+            } catch (error) {
+              console.log(error);
+            }
           }}
         >
           <div className="flex flex-col gap-y-3 ">
@@ -71,7 +78,7 @@ export default function ContactCard() {
               type="submit"
               className=" group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focul:scale-110 hover:scale-110"
             >
-              Submit{" "}
+              Send{" "}
               <span className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1">
                 <FaPaperPlane />
               </span>
@@ -79,38 +86,6 @@ export default function ContactCard() {
             </div>
             <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
-            {/* <div className="flex flex-col space-y-4">
-              <Button
-                className=" relative group/btn flex  space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-                link="https://www.linkedin.com/in/vivek-kumar-singh-aa5b24186"
-              >
-                <IconBrandLinkedin className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Linkedin
-                </span>
-                <BottomGradient />
-              </Button>
-              <Button
-                className=" relative group/btn flex  space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-                link="https://github.com/VivekSonu"
-              >
-                <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  GitHub
-                </span>
-                <BottomGradient />
-              </Button>
-              <Button
-                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-                link="https://www.instagram.com/_viveksonu37/"
-              >
-                <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Instagram
-                </span>
-                <BottomGradient />
-              </Button>
-            </div> */}
             <div className="flex flex-col space-y-4">
           <button
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
