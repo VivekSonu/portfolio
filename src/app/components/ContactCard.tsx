@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import { FaPaperPlane } from 'react-icons/fa';
 import {motion} from "framer-motion";
 import { sendEmail } from '@/actions/sendEmail'; 
@@ -10,7 +10,8 @@ import { IconBrandDiscord, IconBrandGithub, IconBrandGoogle, IconBrandInstagram,
 import Button from './ui/button';
 export default function ContactCard() {
   
-
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
     
   return (
     <motion.section
@@ -53,6 +54,8 @@ export default function ContactCard() {
             try {
               await sendEmail(FormData);
               alert("Thank you! Your message has been sent.");
+              setEmail('');
+              setMessage('');
             } catch (error) {
               console.log(error);
             }
@@ -63,13 +66,17 @@ export default function ContactCard() {
               type="email"
               name="email"
               id="email"
+              value={email}
               placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
               required
               maxLength={500}
               className="h-14 rounded-lg border px-4 border-black/10"
             />
             <TextArea
+              value={message}
               placeholder="Enter your message"
+              onChange={(e) => setMessage(e.target.value)}
               name="message"
               id="mssg"
               required
