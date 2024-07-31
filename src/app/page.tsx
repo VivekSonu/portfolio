@@ -29,28 +29,39 @@ export default function Home() {
   // }, [width]);
 
   // if (width > breakpoint) {
-    return (
- <>
-      <WaterWaveWrapper
-        imageUrl=""
-        dropRadius="3"
-        perturbance="4"
-        resolution="2048"
-      >
-        {() => (
-          <div>
-            <div className="pb-8">
-              {/* <Cursor/ */}
-              <Landing key={0} />
-              <AboutSection key={1} />
-              <FeaturedSection key={2} />
-              <Contact key={3} />
-            </div>
-          </div>
-        )}
-      </WaterWaveWrapper>
+  return (
+    <>
+      <div>
+        <div className="pb-8">
+          {/* <Cursor/ */}
+          <Landing key={0} />
+          <AboutSection key={1} />
+          <FeaturedSection key={2} />
+          <Contact key={3} />
+        </div>
+      </div>
     </>
-    );
+  );
+
+//   <WaterWaveWrapper
+//   imageUrl=""
+//   dropRadius="3"
+//   perturbance="4"
+//   resolution="2048"
+// >
+//   {() => (
+//     <div>
+//       <div className="pb-8">
+//         {/* <Cursor/ */}
+//         <Landing key={0} />
+//         <AboutSection key={1} />
+//         <FeaturedSection key={2} />
+//         <Contact key={3} />
+//       </div>
+//     </div>
+//   )}
+// </WaterWaveWrapper>
+
   // } else {
   //   return (
   //     <>
@@ -74,113 +85,110 @@ export default function Home() {
   //     </WaterWaveWrapper>
   //   </>
   //   );
-  }
+}
 
+// <>
+//   <WaterWaveWrapper
+//     imageUrl=""
+//     dropRadius="4"
+//     perturbance="3"
+//     resolution="4048"
+//   >
+//     {() => (
+//       <div>
+//         <div className="pb-8">
+//           {/* <Cursor/> */}
+//           <Landing key={0} />
+//           <AboutSection key={1} />
+//           <FeaturedSection key={2} />
+//           <Contact key={3} />
+//         </div>
+//       </div>
+//     )}
+//   </WaterWaveWrapper>
+// </>
 
+// const [width, setWidth] = useState(window.innerWidth);
+// const breakpoint = 700;
+// const [mousePosition, setMousePosition] = useState({
+//   x: 0,
+//   y: 0,
+// });
+// console.log(mousePosition);
 
-    // <>
-    //   <WaterWaveWrapper
-    //     imageUrl=""
-    //     dropRadius="4"
-    //     perturbance="3"
-    //     resolution="4048"
-    //   >
-    //     {() => (
-    //       <div>
-    //         <div className="pb-8">
-    //           {/* <Cursor/> */}
-    //           <Landing key={0} />
-    //           <AboutSection key={1} />
-    //           <FeaturedSection key={2} />
-    //           <Contact key={3} />
-    //         </div>
-    //       </div>
-    //     )}
-    //   </WaterWaveWrapper>
-    // </>
-  
-  // const [width, setWidth] = useState(window.innerWidth);
-  // const breakpoint = 700;
-  // const [mousePosition, setMousePosition] = useState({
-  //   x: 0,
-  //   y: 0,
-  // });
-  // console.log(mousePosition);
+// useEffect(() => {
+//   const mouseMove = (e: MouseEvent) => {
+//     setMousePosition({
+//       x: e.clientX,
+//       y: e.clientY,
+//     });
+//   };
 
-  // useEffect(() => {
-  //   const mouseMove = (e: MouseEvent) => {
-  //     setMousePosition({
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     });
-  //   };
+//   window.addEventListener("mousemove", mouseMove);
+//   return () => {
+//     window.removeEventListener("mousemove", mouseMove);
+//   };
+// }, []);
 
-  //   window.addEventListener("mousemove", mouseMove);
-  //   return () => {
-  //     window.removeEventListener("mousemove", mouseMove);
-  //   };
-  // }, []);
-
-  // const variants = {
-  //   default: {
-  //     x: mousePosition.x,
-  //     y: mousePosition.y,
-  //   },
-  // };
-  // useEffect(() => {
-  //   const handleResize = () => setWidth(window.innerWidth);
-  //   window.addEventListener("resize", handleResize);
-  //   console.log(width)
-  //   return () => window.removeEventListener("resize", handleResize);
-  // },[width] );
-  // if (width > breakpoint) {
-  //   return (
-  //     <>
-  //       <WaterWaveWrapper
-  //         imageUrl=""
-  //         dropRadius="4"
-  //         perturbance="3"
-  //         resolution="4048"
-  //       >
-  //         {() => (
-  //           <div>
-  //             <div className="pb-8">
-  //               {/* <Cursor/> */}
-  //               <Landing key={0} />
-  //               <AboutSection key={1} />
-  //               <FeaturedSection key={2} />
-  //               <Contact key={3} />
-  //             </div>
-  //           </div>
-  //         )}
-  //       </WaterWaveWrapper>
-  //     </>
-  //   );
-  // } else {
-  //   return (
-  //     <>
-  //       <WaterWaveWrapper
-  //         imageUrl=""
-  //         dropRadius="4"
-  //         perturbance="3"
-  //         resolution="4048"
-  //       >
-  //         {() => (
-  //           <div>
-  //             <div className="pb-8">
-  //               {/* <Cursor/> */}
-  //               <LandingMob key={0}/>
-  //               <AboutSection key={1} />
-  //               <FeaturedSection key={2} />
-  //               <Contact key={3} />
-  //             </div>
-  //           </div>
-  //         )}
-  //       </WaterWaveWrapper>
-  //     </>
-  //   );
-  // }
-
+// const variants = {
+//   default: {
+//     x: mousePosition.x,
+//     y: mousePosition.y,
+//   },
+// };
+// useEffect(() => {
+//   const handleResize = () => setWidth(window.innerWidth);
+//   window.addEventListener("resize", handleResize);
+//   console.log(width)
+//   return () => window.removeEventListener("resize", handleResize);
+// },[width] );
+// if (width > breakpoint) {
+//   return (
+//     <>
+//       <WaterWaveWrapper
+//         imageUrl=""
+//         dropRadius="4"
+//         perturbance="3"
+//         resolution="4048"
+//       >
+//         {() => (
+//           <div>
+//             <div className="pb-8">
+//               {/* <Cursor/> */}
+//               <Landing key={0} />
+//               <AboutSection key={1} />
+//               <FeaturedSection key={2} />
+//               <Contact key={3} />
+//             </div>
+//           </div>
+//         )}
+//       </WaterWaveWrapper>
+//     </>
+//   );
+// } else {
+//   return (
+//     <>
+//       <WaterWaveWrapper
+//         imageUrl=""
+//         dropRadius="4"
+//         perturbance="3"
+//         resolution="4048"
+//       >
+//         {() => (
+//           <div>
+//             <div className="pb-8">
+//               {/* <Cursor/> */}
+//               <LandingMob key={0}/>
+//               <AboutSection key={1} />
+//               <FeaturedSection key={2} />
+//               <Contact key={3} />
+//             </div>
+//           </div>
+//         )}
+//       </WaterWaveWrapper>
+//     </>
+//   );
+// }
 
 // return (
 //   <>
