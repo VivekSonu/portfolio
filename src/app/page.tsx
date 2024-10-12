@@ -36,8 +36,8 @@ export default function Home() {
           {/* <Cursor/ */}
           <Landing key={0} />
           <AboutSection key={1} />
-          <FeaturedSection key={2} />
-          <Contact key={3} />
+          {/* <FeaturedSection key={2} /> */}
+          <Contact key={2} />
         </div>
       </div>
     </>
