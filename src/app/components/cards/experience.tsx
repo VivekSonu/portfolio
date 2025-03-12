@@ -24,19 +24,26 @@ export default function ExperienceCard() {
   );
 }
 
-const experiencesData=[
-    {
-        date:"2023 - Now",
-        title:"Engineer 1",
-        subTitle:"Textron Aviation",
-        link:"https://www.textron.com/about/our-businesses/textron-aviation",
-        // tag:"Remote",
-    },
-    {
-        date:"2022 - 2023",
-        title:"Student Intern",
-        subTitle:"Textron",
-        link:"https://www.textron.com/",
-        // tag:"Remote",
-    },
+const experiencesData = [
+  {
+    date: "2025 - Now",
+    title: "Engineer II",
+    subTitle: "Textron Aviation",
+    link: "https://www.textron.com/about/our-businesses/textron-aviation",
+    // tag:"Remote",
+  },
+  {
+    date: "2023 - 2025",
+    title: "Engineer I",
+    subTitle: "Textron Aviation",
+    link: "https://www.textron.com/about/our-businesses/textron-aviation",
+    // tag:"Remote",
+  },
+  {
+    date: "2022 - 2023",
+    title: "Student Intern",
+    subTitle: "Textron",
+    link: "https://www.textron.com/",
+    // tag:"Remote",
+  },
 ];
