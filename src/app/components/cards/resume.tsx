@@ -32,7 +32,6 @@ export default function ResumeCard() {
           knack for data visualization and analytics, I bring a holistic
           approach to building impactful digital solutions. Ready to turn your
           web ideas into vibrant realities. Let&apos;s create some online magic!
-          🚀📊
         </motion.p>
 
         {/* Signature */}

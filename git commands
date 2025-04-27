@@ -1,0 +1,19 @@
+If your repository is already set up with a remote.Just make sure your remote URL is correct by checking:
+git remote -v
+
+else
+
+Initialize the repository (if not already initialized):
+git init
+
+Add the remote repository:
+git remote add origin <remote-repository-URL>
+
+Stage your changes:
+git add .
+
+Commit your changes:
+git commit -m "Your commit message"
+
+Push your changes to the remote repository:
+git push origin main
